@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../core.ip_user_files/ipstatic" \
+"game_tb_time_synth.v" \
+
+sv xil_defaultlib  --include "../../../../../core.ip_user_files/ipstatic" \
+"../../../../../core.srcs/sim_1/new/game_tb.sv" \
+
+# Do not sort compile order
+nosort

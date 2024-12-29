@@ -1,0 +1,139 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sat Dec 28 22:29:06 2024
+| Host         : chabess running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file GAME_control_sets_placed.rpt
+| Design       : GAME
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    61 |
+|    Minimum number of control sets                        |    61 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   107 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    61 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     8 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     8 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |    18 |
+| >= 14 to < 16      |     3 |
+| >= 16              |    17 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             163 |          134 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             127 |           52 |
+| Yes          | No                    | No                     |              33 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             394 |          170 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+----------------------------------------------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|     Clock Signal    |                                               Enable Signal                                              |                     Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------+----------------------------------------------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG      | ps2_transmitter/data_count                                                                               | ps2_transmitter/data_count[3]_i_1_n_0                    |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG      | ps2_transmitter/data_count                                                                               |                                                          |                1 |              3 |         3.00 |
+|  bclk/inst/clk_out1 | core/player/player_x[3]_i_1_n_0                                                                          | core/state_str/add_block_inst/rstn                       |                1 |              4 |         4.00 |
+|  bclk/inst/clk_out1 | core/request/game_run/game_run_block/y_reg[3]_i_2__0_n_0                                                 | core/request/game_run/game_run_block/y_reg[3]_i_1__0_n_0 |                1 |              4 |         4.00 |
+|  bclk/inst/clk_out1 | core/state_str/change_block_inst/x0                                                                      | core/state_str/change_block_inst/x0[3]_i_1_n_0           |                1 |              4 |         4.00 |
+|  bclk/inst/clk_out1 | core/request/game_run/game_run_block/CEC                                                                 | core/request/game_run/game_run_block/y_reg[3]_i_1__0_n_0 |                2 |              4 |         2.00 |
+|  bclk/inst/clk_out1 | core/state_str/change_block_inst/y0                                                                      | core/state_str/change_block_inst/x0[3]_i_1_n_0           |                1 |              4 |         4.00 |
+|  bclk/inst/clk_out1 | core/player/player_y[3]_i_1_n_0                                                                          | core/state_str/add_block_inst/rstn                       |                1 |              4 |         4.00 |
+|  bclk/inst/clk_out2 |                                                                                                          |                                                          |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG      | ps2_transmitter/next_state__0                                                                            |                                                          |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG      | ps2_transmitter/E[0]                                                                                     | core/state_str/add_block_inst/rstn                       |                2 |              6 |         3.00 |
+|  bclk/inst/clk_out1 |                                                                                                          | core/request/send_request/finsh0                         |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG      | ps2_transmitter/parallel_data_in[7]_i_1_n_0                                                              | ps2_transmitter/clock_output_oe0                         |                3 |              8 |         2.67 |
+|  bclk/inst/clk_out1 | SP/dcd_inst/cur[7]_i_2_n_0                                                                               | SP/dcd_inst/cur[7]_i_1_n_0                               |                2 |              8 |         4.00 |
+|  bclk/inst/clk_out1 | core/state_str/change_block_inst/lattice                                                                 | core/state_str/add_block_inst/rstn                       |                7 |              8 |         1.14 |
+|  bclk/inst/clk_out1 | SP/dcd_inst/y[7]_i_1_n_0                                                                                 | SP/dcd_inst/query[16]_i_1_n_0                            |                3 |              8 |         2.67 |
+|  bclk/inst/clk_out1 | core/state_str/score_inst/score_reg0_0                                                                   | core/state_str/add_block_inst/rstn                       |                3 |              8 |         2.67 |
+|  bclk/inst/clk_out1 | core/state_str/reset_state_inst/FSM_onehot_state_reg[2]_0[0]                                             | core/state_str/reset_state_inst/state_addr[7]_i_1_n_0    |                3 |              8 |         2.67 |
+|  bclk/inst/clk_out1 | SP/dcd_inst/pic_id[7]_i_1_n_0                                                                            | SP/dcd_inst/query[16]_i_1_n_0                            |                6 |              8 |         1.33 |
+|  clk_IBUF_BUFG      | ps2_transmitter/data_in_buf_0                                                                            |                                                          |                3 |              9 |         3.00 |
+|  bclk/inst/clk_out2 | SP/du_inst/dst_inst/V_CNT[9]_i_2_n_0                                                                     | SP/du_inst/dst_inst/V_CNT[9]_i_1_n_0                     |                3 |             10 |         3.33 |
+|  bclk/inst/clk_out1 | SP/dcd_inst/quest_addr[9]_i_1_n_0                                                                        | SP/dcd_inst/query[16]_i_1_n_0                            |                4 |             10 |         2.50 |
+|  bclk/inst/clk_out2 |                                                                                                          | SP/du_inst/dst_inst/H_CNT[10]_i_1_n_0                    |                5 |             11 |         2.20 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_256_319_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_384_447_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_512_575_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_192_255_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_128_191_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_0_63_0_2_i_1_n_0     |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_320_383_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_704_767_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_768_831_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_576_639_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_832_895_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_640_703_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2_i_1_n_0   |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_448_511_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_960_1023_0_2_i_1_n_0 |                                                          |                3 |             12 |         4.00 |
+|  bclk/inst/clk_out1 | SP/quest_server_inst/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_896_959_0_2_i_1_n_0  |                                                          |                3 |             12 |         4.00 |
+|  clk_IBUF_BUFG      | ps2_transmitter/clock_count[0]_i_1_n_0                                                                   | ps2_transmitter/clock_output_oe0                         |                4 |             13 |         3.25 |
+|  bclk/inst/clk_out1 | core/state_str/add_block_inst/levelRAM_a[0]_i_1_n_0                                                      | core/state_str/add_block_inst/rstn                       |                5 |             13 |         2.60 |
+|  clk_IBUF_BUFG      |                                                                                                          | core/state_str/add_block_inst/rstn                       |                4 |             14 |         3.50 |
+|  bclk/inst/clk_out2 | SP/du_inst/ddp_inst/sel                                                                                  | core/state_str/add_block_inst/rstn                       |                4 |             15 |         3.75 |
+|  bclk/inst/clk_out1 | SP/dcd_inst/waddr[14]_i_2_n_0                                                                            | SP/dcd_inst/waddr0__0                                    |                7 |             15 |         2.14 |
+|  clk_IBUF_BUFG      |                                                                                                          | music/music_cnt[0]_i_1_n_0                               |                4 |             16 |         4.00 |
+|  bclk/inst/clk_out1 | core/state_str/reset_state_inst/state_reg                                                                | core/state_str/add_block_inst/rstn                       |                8 |             16 |         2.00 |
+|  bclk/inst/clk_out2 |                                                                                                          | core/state_str/add_block_inst/rstn                       |                7 |             16 |         2.29 |
+|  bclk/inst/clk_out1 | SP/dcd_inst/query_tmp[17]_i_1_n_0                                                                        |                                                          |                8 |             17 |         2.12 |
+|  bclk/inst/clk_out1 | SP/dcd_inst/query[16]_i_2_n_0                                                                            | SP/dcd_inst/query[16]_i_1_n_0                            |                7 |             17 |         2.43 |
+|  clk_IBUF_BUFG      | music/music_addr[18]_i_1_n_0                                                                             | core/state_str/add_block_inst/rstn                       |                7 |             19 |         2.71 |
+|  bclk/inst/clk_out1 | core/request/game_run/game_run_background/E[0]                                                           | core/state_str/add_block_inst/rstn                       |               10 |             21 |         2.10 |
+|  bclk/inst/clk_out1 | SP/dcd_inst/h[7]_i_1_n_0                                                                                 | SP/dcd_inst/query[16]_i_1_n_0                            |               12 |             22 |         1.83 |
+|  bclk/inst/clk_out1 | core/state_str/change_block_inst/lattice_temp0                                                           | core/state_str/add_block_inst/rstn                       |               18 |             32 |         1.78 |
+|  bclk/inst/clk_out1 | core/ctrl/E[0]                                                                                           | core/state_str/add_block_inst/rstn                       |                8 |             32 |         4.00 |
+|  bclk/inst/clk_out1 | core/state_str/score_inst/state_type_reg_2                                                               | core/state_str/add_block_inst/rstn                       |               14 |             32 |         2.29 |
+|  bclk/inst/clk_out1 | core/state_str/add_block_inst/state_type_temp                                                            | core/state_str/add_block_inst/rstn                       |               22 |             40 |         1.82 |
+|  bclk/inst/clk_out1 |                                                                                                          |                                                          |               47 |             60 |         1.28 |
+|  bclk/inst/clk_out1 |                                                                                                          | core/state_str/add_block_inst/rstn                       |               29 |             64 |         2.21 |
+|  clk_IBUF_BUFG      |                                                                                                          |                                                          |               84 |             98 |         1.17 |
+|  bclk/inst/clk_out1 | core/stateRAM/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0             |                                                          |               32 |            128 |         4.00 |
+|  bclk/inst/clk_out1 | core/stateRAM/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0           |                                                          |               32 |            128 |         4.00 |
++---------------------+----------------------------------------------------------------------------------------------------------+----------------------------------------------------------+------------------+----------------+--------------+
+
+

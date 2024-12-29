@@ -1,0 +1,67 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L blk_mem_gen_v8_4_6 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot game_tb_behav xil_defaultlib.game_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 5 for port 'key' [D:/programm/verilog/game/core/core.srcs/sources_1/new/core.sv:122]
+WARNING: [VRFC 10-5021] port 'game_wait_en' is not connected on this instance [D:/programm/verilog/game/core/core.srcs/sources_1/new/request.sv:116]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module xil_defaultlib.bclk_clk_wiz
+Compiling module xil_defaultlib.bclk
+Compiling module xil_defaultlib.ps2_transmitter
+Compiling module xil_defaultlib.key
+Compiling module xil_defaultlib.DST_default
+Compiling module xil_defaultlib.DDP
+Compiling module xil_defaultlib.DU
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.res_pic_index
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="art...
+Compiling module xil_defaultlib.res_picture
+Compiling module xil_defaultlib.DCD
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_output_stage(...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_6.blk_mem_gen_v8_4_6(C_FAMILY="art...
+Compiling module xil_defaultlib.VRAM
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.quest_server
+Compiling module xil_defaultlib.SP
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.clock
+Compiling module xil_defaultlib.decode
+Compiling module xil_defaultlib.change_block
+Compiling module xil_defaultlib.add_block
+Compiling module xil_defaultlib.reset_state
+Compiling module xil_defaultlib.score
+Compiling module xil_defaultlib.state_str
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.stateRAM
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.leverROM
+Compiling module xil_defaultlib.player
+Compiling module xil_defaultlib.send_request
+Compiling module xil_defaultlib.game_run_background
+Compiling module xil_defaultlib.game_run_block
+Compiling module xil_defaultlib.game_run_key_error
+Compiling module xil_defaultlib.game_run_player
+Compiling module xil_defaultlib.game_run
+Compiling module xil_defaultlib.game_start
+Compiling module xil_defaultlib.game_wait
+Compiling module xil_defaultlib.game_end
+Compiling module xil_defaultlib.request
+Compiling module xil_defaultlib.core
+Compiling module xil_defaultlib.GAME
+Compiling module xil_defaultlib.game_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot game_tb_behav

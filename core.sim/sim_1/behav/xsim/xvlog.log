@@ -1,0 +1,77 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/programm/verilog/game/core/core.ip_user_files/ip/bclk/bclk_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bclk
+INFO: [VRFC 10-311] analyzing module bclk_clk_wiz
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/DCD.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCD
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/DDP.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/DST.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DST
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/DU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/GAME.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GAME
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/SP.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/add_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/change_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module change_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/clock.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core
+WARNING: [VRFC 10-3380] identifier 'game_start_en' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/core.sv:38]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/game_end.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_end
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/game_run.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_run
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/game_run_background.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_run_background
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/game_run_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_run_block
+WARNING: [VRFC 10-3380] identifier 'x_reg' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/game_run_block.sv:96]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/game_run_key_error.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_run_key_error
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/game_run_player.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_run_player
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/game_start.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_start
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/game_wait.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_wait
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/key.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/player.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module player
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/ps2_transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ps2_transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/request.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module request
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/reset_state.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_state
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/score.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module score
+WARNING: [VRFC 10-3380] identifier 'state_type_reg' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/score.sv:95]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/send_request.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module send_request
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state_str
+WARNING: [VRFC 10-3380] identifier 'change_block_finish' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:84]
+WARNING: [VRFC 10-3380] identifier 'add_block_finish' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:91]
+WARNING: [VRFC 10-3380] identifier 'reset_finish' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:98]
+WARNING: [VRFC 10-3380] identifier 'score_finish' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:105]
+WARNING: [VRFC 10-3380] identifier 'change_block_vld' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:117]
+WARNING: [VRFC 10-3380] identifier 'add_block_vld' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:118]
+WARNING: [VRFC 10-3380] identifier 'reset_vld' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:119]
+WARNING: [VRFC 10-3380] identifier 'score_vld' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:120]
+WARNING: [VRFC 10-3380] identifier 'change_block_vld' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:123]
+WARNING: [VRFC 10-3380] identifier 'add_block_vld' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:126]
+WARNING: [VRFC 10-3380] identifier 'reset_vld' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:129]
+WARNING: [VRFC 10-3380] identifier 'score_vld' is used before its declaration [D:/programm/verilog/game/core/core.srcs/sources_1/new/state_str.sv:132]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/programm/verilog/game/core/core.srcs/sim_1/new/game_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_tb

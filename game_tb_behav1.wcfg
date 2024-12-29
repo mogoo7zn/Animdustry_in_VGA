@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="game_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="game_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="340.090 ns"></ZoomStartTime>
+      <ZoomEndTime time="431.491 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="102"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/game_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/SW" type="array">
+      <obj_property name="ElementShortName">SW[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/LED" type="array">
+      <obj_property name="ElementShortName">LED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/BTNC" type="logic">
+      <obj_property name="ElementShortName">BTNC</obj_property>
+      <obj_property name="ObjectShortName">BTNC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/vram_inst/wea" type="array">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/vram_inst/addra" type="array">
+      <obj_property name="ElementShortName">addra[14:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[14:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/vram_inst/dina" type="array">
+      <obj_property name="ElementShortName">dina[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/dcd_inst/rgb_data" type="array">
+      <obj_property name="ElementShortName">rgb_data[12:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_data[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/dcd_inst/query" type="array">
+      <obj_property name="ElementShortName">query[17:0]</obj_property>
+      <obj_property name="ObjectShortName">query[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/dcd_inst/query_start" type="array">
+      <obj_property name="ElementShortName">query_start[33:0]</obj_property>
+      <obj_property name="ObjectShortName">query_start[33:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/dcd_inst/quest_addr" type="array">
+      <obj_property name="ElementShortName">quest_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">quest_addr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/dcd_inst/quest" type="array">
+      <obj_property name="ElementShortName">quest[7:0]</obj_property>
+      <obj_property name="ObjectShortName">quest[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/dcd_inst/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/game_tb/GAME/SP/dcd_inst/pic_id" type="array">
+      <obj_property name="ElementShortName">pic_id[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pic_id[7:0]</obj_property>
+   </wvobject>
+</wave_config>

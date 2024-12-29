@@ -1,0 +1,4 @@
+xpm_cdc.sv,systemverilog,xpm,E:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../core.srcs/sources_1/ip/bclk"
+xpm_memory.sv,systemverilog,xpm,E:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../core.srcs/sources_1/ip/bclk"
+xpm_VCOMP.vhd,vhdl,xpm,E:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../core.srcs/sources_1/ip/bclk"
+glbl.v,Verilog,xil_defaultlib,glbl.v
